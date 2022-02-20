@@ -18,6 +18,8 @@ class Ciudades : AppCompatActivity(){
 
         val bFcp = findViewById<Button>(R.id.bFcp)
         val bTulum = findViewById<Button>(R.id.bTulum)
+        val bCancun = findViewById<Button>(R.id.bCancun)
+        val bCozumel = findViewById<Button>(R.id.bCozumel)
 
         bFcp.setOnClickListener(View.OnClickListener {
           val intent = Intent(this, MainActivity::class.java)
@@ -28,6 +30,16 @@ class Ciudades : AppCompatActivity(){
         bTulum.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.putExtra(TAG, "ciudad-tulum")
+            startActivity(intent)
+        })
+       bCancun.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra(TAG, "ciudad-cancun")
+            startActivity(intent)
+        })
+        bCozumel.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra(TAG, "ciudad-cozumel")
             startActivity(intent)
         })
     }

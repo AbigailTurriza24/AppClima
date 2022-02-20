@@ -32,4 +32,21 @@
         android:layout_height="wrap_content"
         android:text="@string/texto_boton_tulum"
         android:textColor="#DC3F85" />
+
+    <Button
+        android:id="@+id/bCancun"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_boton_cancun"
+        android:textColor="#DC3F85" />
+
+    <Button
+        android:id="@+id/bCozumel"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_boton_cozumel"
+        android:textColor="#DC3F85" />
+
 </LinearLayout>

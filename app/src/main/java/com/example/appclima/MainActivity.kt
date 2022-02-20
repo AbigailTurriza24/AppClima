@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         val ciudadfcp = Ciudad("Felipe Carrillo Puerto", 30, "Soleado")
         val ciudadtulum = Ciudad("Tulum", 28, "Cielo Despejado")
+        val ciudadcancun = Ciudad("Cancún", 32, "Mayormente Soleado")
+        val ciudadcozumel = Ciudad("Cozumel", 22, "Parcialmente Nublado")
 
         if(ciudad == "ciudad-fcp") {
             //mostrar informacion de fcp
@@ -39,6 +41,19 @@ class MainActivity : AppCompatActivity() {
             twCiudad?.text = ciudadtulum.nombre
             tvGrados?.text = ciudadtulum.grados.toString() + "°"
             twEstatus?.text = ciudadtulum.estatus
+
+        }else if (ciudad == "ciudad-cancun") {
+            //mostrar informacion de fcp
+            twCiudad?.text = ciudadcancun.nombre
+            tvGrados?.text = ciudadcancun.grados.toString() + "°"
+            twEstatus?.text = ciudadcancun.estatus
+
+        }else if (ciudad == "ciudad-cozumel") {
+            //mostrar informacion de fcp
+            twCiudad?.text = ciudadcozumel.nombre
+            tvGrados?.text = ciudadcozumel.grados.toString() + "°"
+            twEstatus?.text = ciudadcozumel.estatus
+
         }else{
             Toast.makeText(this,"No se encuentra la información", Toast.LENGTH_SHORT).show()
 
